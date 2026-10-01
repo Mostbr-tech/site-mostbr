@@ -1,0 +1,494 @@
+/* ==========================================================================
+   MOST - Home Equity page
+   Scope: home-equity.html only.
+   ========================================================================== */
+
+.home-equity-most-page {
+  overflow-x: hidden;
+}
+
+.home-equity-most-page .b-container {
+  width: 100%;
+}
+
+.home-equity-most-page main,
+.home-equity-most-page footer {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.home-equity-most-page h1,
+.home-equity-most-page h2,
+.home-equity-most-page h3,
+.home-equity-most-page h4,
+.home-equity-most-page h5,
+.home-equity-most-page h6 {
+  letter-spacing: 0;
+}
+
+.home-equity-most-page .most-home-equity-banner {
+  background-color: var(--most-navy-950);
+}
+
+.home-equity-most-page .most-home-equity-banner .bg-overlay-5 {
+  background: linear-gradient(90deg, rgba(6, 15, 30, 0.96) 0%, rgba(6, 15, 30, 0.78) 56%, rgba(13, 31, 60, 0.54) 100%);
+  opacity: 1;
+}
+
+.home-equity-most-page .most-home-equity-banner h1 {
+  max-width: 820px;
+}
+
+.home-equity-most-page .breadcrumb {
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 4px;
+}
+
+.home-equity-most-page .most-home-equity-intro {
+  background-color: var(--most-surface);
+}
+
+.home-equity-most-page .most-home-equity-nav {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: var(--most-shadow-card);
+}
+
+.home-equity-most-page .most-home-equity-nav li {
+  min-width: 0;
+}
+
+.home-equity-most-page .most-home-equity-nav a {
+  line-height: 1.35;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  transition: color 0.3s ease;
+}
+
+.home-equity-most-page .most-home-equity-nav a:hover {
+  color: var(--most-pink-400) !important;
+}
+
+.home-equity-most-page .most-home-equity-side-cta {
+  min-height: 380px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.home-equity-most-page .most-home-equity-side-cta .bg-overlay-3 {
+  opacity: 0.94;
+}
+
+.home-equity-most-page .most-home-equity-intro-content img {
+  min-height: 495px;
+  object-fit: cover;
+  filter: saturate(0.64) contrast(1.05);
+}
+
+.home-equity-most-page .most-home-equity-intro-content > p,
+.home-equity-most-page .most-home-equity-use-cases .row > .col-12 > p,
+.home-equity-most-page .most-home-equity-analysis .row > .col-12 > p {
+  color: rgba(6, 15, 30, 0.68);
+}
+
+.home-equity-most-page .most-home-equity-highlight,
+.home-equity-most-page .most-home-equity-risk-highlight {
+  max-width: 780px;
+  padding: 22px 24px;
+  border-radius: var(--most-radius-md);
+  border-left: 4px solid var(--most-pink-500);
+}
+
+.home-equity-most-page .most-home-equity-highlight {
+  background-color: var(--most-white);
+  box-shadow: 0 14px 36px rgba(6, 15, 30, 0.06);
+}
+
+.home-equity-most-page .most-home-equity-note,
+.home-equity-most-page .most-home-equity-closing-note,
+.home-equity-most-page .most-home-equity-final-disclaimer {
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.home-equity-most-page .most-home-equity-note {
+  color: rgba(6, 15, 30, 0.58) !important;
+}
+
+.home-equity-most-page .most-home-equity-secondary,
+.home-equity-most-page .most-home-equity-final-secondary {
+  min-height: 48px;
+  align-items: center;
+  padding: 0 4px;
+}
+
+.home-equity-most-page .most-home-equity-use-cases {
+  background-color: var(--most-white);
+}
+
+.home-equity-most-page .most-home-equity-use-grid {
+  align-items: stretch;
+}
+
+.home-equity-most-page .most-home-equity-use-card {
+  min-height: 560px;
+  overflow: hidden;
+}
+
+.home-equity-most-page .most-home-equity-use-card > img {
+  filter: saturate(0.66) contrast(1.04);
+}
+
+.home-equity-most-page .most-home-equity-use-card .service-wrap {
+  min-height: 238px;
+}
+
+.home-equity-most-page .most-home-equity-use-card .service-wrap p {
+  margin-bottom: 0;
+}
+
+.home-equity-most-page .most-home-equity-closing-note {
+  max-width: 860px;
+  color: rgba(6, 15, 30, 0.64);
+}
+
+.home-equity-most-page .most-home-equity-analysis {
+  background-color: var(--most-surface-soft);
+}
+
+.home-equity-most-page .most-home-equity-analysis-grid {
+  align-items: stretch;
+}
+
+.home-equity-most-page .most-home-equity-analysis-card {
+  min-height: 330px;
+  background-color: var(--most-white);
+  border-color: rgba(6, 15, 30, 0.08);
+  box-shadow: 0 12px 30px rgba(6, 15, 30, 0.06);
+}
+
+.home-equity-most-page .most-home-equity-analysis-card h2 {
+  line-height: 0.95;
+}
+
+.home-equity-most-page .most-home-equity-analysis-card-dark {
+  background-color: var(--most-navy-950);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.home-equity-most-page .most-home-equity-process {
+  background-color: var(--most-navy-950);
+}
+
+.home-equity-most-page .most-home-equity-process-lead {
+  max-width: 790px;
+  color: rgba(238, 241, 247, 0.7);
+}
+
+.home-equity-most-page .most-home-equity-process-grid {
+  align-items: stretch;
+}
+
+.home-equity-most-page .most-home-equity-process-card {
+  min-height: 335px;
+  padding-bottom: 118px !important;
+  background-color: var(--most-navy-900);
+  border: 1px solid rgba(238, 241, 247, 0.08);
+  overflow: hidden;
+}
+
+.home-equity-most-page .most-home-equity-process-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 30px;
+  width: 44px;
+  height: 4px;
+  background-color: var(--most-pink-500);
+  border-radius: 0 0 var(--most-radius-sm) var(--most-radius-sm);
+}
+
+.home-equity-most-page .most-home-equity-process-card p {
+  margin-bottom: 0;
+}
+
+.home-equity-most-page .most-home-equity-process-card .qoute-inner {
+  background-color: var(--most-navy-950);
+}
+
+.home-equity-most-page .most-home-equity-process-card .qoute-wrapper {
+  background-color: var(--most-surface-soft);
+}
+
+.home-equity-most-page .most-home-equity-process-card-final {
+  background-color: var(--most-pink-500);
+}
+
+.home-equity-most-page .most-home-equity-process-card-final p {
+  color: rgba(6, 15, 30, 0.75);
+}
+
+.home-equity-most-page .most-home-equity-process-card-final .btn-cta-secondary {
+  color: var(--most-navy-950);
+}
+
+.home-equity-most-page .most-home-equity-process-card-final .btn-cta-secondary:hover {
+  color: var(--most-white);
+}
+
+.home-equity-most-page .most-home-equity-risks {
+  overflow: hidden;
+}
+
+.home-equity-most-page .most-home-equity-risks .bg-overlay-4 {
+  background: linear-gradient(90deg, rgba(6, 15, 30, 0.98) 0%, rgba(6, 15, 30, 0.9) 58%, rgba(13, 31, 60, 0.78) 100%);
+  opacity: 1;
+}
+
+.home-equity-most-page .most-home-equity-risk-card {
+  padding: 34px;
+  min-height: 250px;
+  border-radius: var(--most-radius-md);
+  background: rgba(238, 241, 247, 0.08);
+  border: 1px solid rgba(238, 241, 247, 0.12);
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.22);
+}
+
+.home-equity-most-page .most-home-equity-risk-highlight {
+  background: rgba(255, 75, 139, 0.16);
+  border-color: var(--most-pink-500);
+}
+
+.home-equity-most-page .most-home-equity-role {
+  padding-top: 108px;
+  padding-bottom: 108px;
+}
+
+.home-equity-most-page .most-home-equity-role-grid {
+  align-items: stretch;
+}
+
+.home-equity-most-page .most-home-equity-role-card {
+  min-height: 360px;
+  max-height: none;
+  justify-content: flex-end;
+  border-radius: var(--most-radius-md);
+  overflow: hidden;
+}
+
+.home-equity-most-page .most-home-equity-role-card .why-wrap {
+  transform: none;
+}
+
+.home-equity-most-page .most-home-equity-role-card.project .spacer-top-left {
+  box-shadow: -10px -10px 0 0 var(--most-navy-950);
+}
+
+.home-equity-most-page .most-home-equity-role-card h6 {
+  min-width: 52px;
+  text-align: center;
+}
+
+.home-equity-most-page .most-home-equity-role-card p {
+  margin-bottom: 0;
+}
+
+.home-equity-most-page .most-home-equity-faq {
+  background-color: var(--most-surface-soft);
+}
+
+.home-equity-most-page .most-home-equity-faq .img-faqs {
+  min-height: 660px;
+  object-fit: cover;
+  filter: saturate(0.7) contrast(1.03);
+}
+
+.home-equity-most-page .most-home-equity-faq .text-faqs .wrapper-text {
+  width: 68%;
+}
+
+.home-equity-most-page .most-home-equity-faq .text-faqs h3,
+.home-equity-most-page .most-home-equity-faq .accordion .accordion-button {
+  line-height: 1.22;
+}
+
+.home-equity-most-page .most-home-equity-faq .accordion .accordion-body {
+  color: rgba(6, 15, 30, 0.68);
+  line-height: 1.62;
+}
+
+.home-equity-most-page .most-home-equity-final-cta {
+  overflow: hidden;
+}
+
+.home-equity-most-page .most-home-equity-final-cta .bg-overlay-4 {
+  background: linear-gradient(90deg, rgba(6, 15, 30, 0.96) 0%, rgba(6, 15, 30, 0.84) 54%, rgba(13, 31, 60, 0.66) 100%);
+  opacity: 1;
+}
+
+.home-equity-most-page .most-home-equity-final-cta h2 {
+  max-width: 860px;
+}
+
+.home-equity-most-page .most-home-equity-final-cta p {
+  max-width: 720px;
+}
+
+.home-equity-most-page .most-home-equity-final-disclaimer {
+  color: rgba(238, 241, 247, 0.72) !important;
+}
+
+.home-equity-most-page .most-radar-newsletter h3 {
+  max-width: 580px;
+}
+
+.home-equity-most-page .most-radar-newsletter p {
+  max-width: 640px;
+}
+
+.home-equity-most-page .most-newsletter-helper {
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 1199.98px) {
+  .home-equity-most-page .most-home-equity-intro .sidebar-service {
+    width: 100%;
+  }
+
+  .home-equity-most-page .most-home-equity-use-card {
+    min-height: 500px;
+  }
+
+  .home-equity-most-page .most-home-equity-analysis-card,
+  .home-equity-most-page .most-home-equity-role-card {
+    min-height: 300px;
+  }
+}
+
+@media only screen and (max-width: 991.98px) {
+  .home-equity-most-page .most-home-equity-banner h1 {
+    max-width: 720px;
+  }
+
+  .home-equity-most-page .most-home-equity-faq .text-faqs .wrapper-text {
+    width: 74%;
+  }
+}
+
+@media only screen and (max-width: 768.98px) {
+  .home-equity-most-page .most-home-equity-banner h1 {
+    max-width: 350px;
+  }
+
+  .home-equity-most-page .breadcrumb {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+
+  .home-equity-most-page .most-home-equity-intro-content img,
+  .home-equity-most-page .most-home-equity-faq .img-faqs {
+    min-height: 420px;
+  }
+
+  .home-equity-most-page .most-home-equity-use-card {
+    min-height: 440px;
+  }
+
+  .home-equity-most-page .most-home-equity-use-card .service-wrap {
+    min-height: auto;
+    transform: none;
+  }
+
+  .home-equity-most-page .most-home-equity-process-card {
+    min-height: 300px;
+  }
+
+  .home-equity-most-page .most-home-equity-analysis-card,
+  .home-equity-most-page .most-home-equity-role-card {
+    min-height: 260px;
+  }
+
+  .home-equity-most-page .most-home-equity-faq .text-faqs .wrapper-text {
+    width: 84%;
+  }
+
+  .home-equity-most-page .most-home-equity-faq .accordion .accordion-button {
+    font-size: 18px;
+  }
+
+  .home-equity-most-page .footer-terms {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 8px;
+  }
+}
+
+@media only screen and (max-width: 575.98px) {
+  .home-equity-most-page .most-home-equity-banner,
+  .home-equity-most-page .most-home-equity-final-cta,
+  .home-equity-most-page .most-home-equity-risks {
+    background-position: center center !important;
+  }
+
+  .home-equity-most-page .most-home-equity-banner h1 {
+    max-width: 310px;
+  }
+
+  .home-equity-most-page .most-home-equity-highlight,
+  .home-equity-most-page .most-home-equity-risk-highlight {
+    padding: 18px;
+  }
+
+  .home-equity-most-page .most-home-equity-side-cta {
+    min-height: 320px;
+  }
+
+  .home-equity-most-page .btn-cta-primary,
+  .home-equity-most-page .btn-cta-secondary {
+    max-width: 100%;
+  }
+
+  .home-equity-most-page .most-home-equity-secondary,
+  .home-equity-most-page .most-home-equity-final-secondary,
+  .home-equity-most-page .most-home-equity-process-card-final .btn-cta-secondary {
+    width: 100%;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .home-equity-most-page .most-home-equity-nav li {
+    align-items: flex-start !important;
+  }
+
+  .home-equity-most-page .most-home-equity-nav a {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .home-equity-most-page .most-home-equity-nav a .bi {
+    flex: 0 0 auto;
+    margin-top: 1px;
+  }
+
+  .home-equity-most-page .most-home-equity-nav[data-aos="fade-right"],
+  .home-equity-most-page .most-home-equity-process-grid [data-aos="fade-right"] {
+    transform: translate3d(0, 0, 0);
+  }
+
+  .home-equity-most-page .most-home-equity-process-card {
+    padding: 28px 24px 110px !important;
+  }
+
+  .home-equity-most-page .most-home-equity-risk-card {
+    padding: 28px 24px;
+  }
+
+  .home-equity-most-page .most-home-equity-faq .text-faqs .wrapper-text {
+    width: 90%;
+  }
+}

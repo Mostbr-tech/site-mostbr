@@ -1,0 +1,634 @@
+/* ========================================================================== 
+   MOST — About page
+   Scope: sobre-a-most.html only.
+   ========================================================================== */
+
+.about-most-page .most-about-banner {
+  background-color: var(--most-navy-950);
+}
+
+.about-most-page {
+  overflow-x: hidden;
+}
+
+.about-most-page .b-container {
+  width: 100%;
+}
+
+.about-most-page main,
+.about-most-page footer {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.about-most-page .most-about-banner .bg-overlay-5 {
+  background: linear-gradient(90deg, rgba(6, 15, 30, 0.94) 0%, rgba(6, 15, 30, 0.76) 56%, rgba(6, 15, 30, 0.58) 100%);
+  opacity: 1;
+}
+
+.about-most-page .most-about-intro {
+  background-color: var(--most-surface);
+}
+
+.about-most-page .most-about-intro img {
+  filter: saturate(0.88) contrast(1.02);
+}
+
+.about-most-page .most-about-intro h2 {
+  max-width: 650px;
+}
+
+.about-most-page .most-about-intro > .b-container > .row {
+  column-gap: 0 !important;
+}
+
+.about-most-page .most-about-highlight {
+  margin: 26px 0;
+  padding: 18px 20px;
+  background-color: var(--most-white);
+  border-left: 4px solid var(--most-pink-500);
+  border-radius: var(--most-radius-md);
+  box-shadow: 0 16px 38px rgba(6, 15, 30, 0.06);
+}
+
+.about-most-page .most-about-proof {
+  margin-top: 10px;
+  padding: 22px 24px;
+  background-color: var(--most-navy-950);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--most-radius-md);
+}
+
+.about-most-page .most-about-proof p {
+  color: rgba(255, 255, 255, 0.72);
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.about-most-page .most-about-side-label h5 {
+  letter-spacing: 0;
+}
+
+.about-most-page .most-about-audiences {
+  padding-top: 96px;
+}
+
+.about-most-page .most-about-audiences .row:last-child {
+  align-items: stretch;
+}
+
+.about-most-page .most-audience-card {
+  position: relative;
+  min-height: 405px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.045) 0%, rgba(255, 255, 255, 0.018) 100%);
+  border-color: rgba(255, 255, 255, 0.12);
+  overflow: hidden;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-most-page .most-audience-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 4px;
+  background-color: var(--most-pink-500);
+  opacity: 0.78;
+}
+
+.about-most-page .most-audience-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 75, 139, 0.48);
+  box-shadow: var(--most-shadow-dark);
+}
+
+.about-most-page .most-audience-icon {
+  width: 70px;
+  height: 70px;
+  flex: 0 0 auto;
+}
+
+.about-most-page .most-audience-tags {
+  margin-top: auto;
+  color: var(--most-pink-400);
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.about-most-page .most-about-journey {
+  background-color: var(--most-surface-soft);
+}
+
+.about-most-page .most-journey-intro {
+  max-width: 780px;
+}
+
+.about-most-page .most-journey-grid {
+  align-items: stretch;
+}
+
+.about-most-page .most-journey-card {
+  min-height: 380px;
+  padding-bottom: 118px !important;
+  background-color: var(--most-navy-950);
+  border: 1px solid rgba(6, 15, 30, 0.08);
+  overflow: hidden;
+}
+
+.about-most-page .most-journey-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 30px;
+  width: 44px;
+  height: 4px;
+  background-color: var(--most-pink-500);
+  border-radius: 0 0 var(--most-radius-sm) var(--most-radius-sm);
+}
+
+.about-most-page .most-journey-card .qoute-inner {
+  background-color: var(--most-surface-soft);
+}
+
+.about-most-page .most-journey-card .qoute-wrapper {
+  background-color: var(--most-navy-900);
+}
+
+.about-most-page .most-about-purpose {
+  position: relative;
+  padding-top: 108px;
+  padding-bottom: 108px;
+}
+
+.about-most-page .most-purpose-visual {
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.about-most-page .most-purpose-visual .bg-overlay-6 {
+  pointer-events: none;
+  opacity: 0.34;
+}
+
+.about-most-page .most-purpose-visual img {
+  filter: saturate(0.7) contrast(1.02);
+}
+
+.about-most-page .most-purpose-visual .impact-wrapper {
+  width: calc(100% - 12px);
+}
+
+.about-most-page .most-purpose-highlight {
+  max-width: 390px;
+  background-color: var(--most-navy-950);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.about-most-page .most-purpose-grid {
+  align-items: stretch;
+}
+
+.about-most-page .most-purpose-card {
+  min-height: 425px;
+  box-shadow: var(--most-shadow-dark);
+}
+
+.about-most-page .most-purpose-card h2,
+.about-most-page .most-purpose-card h4 {
+  letter-spacing: 0;
+}
+
+.about-most-page .most-purpose-card h4 {
+  line-height: 1.18;
+}
+
+.about-most-page .most-purpose-card p {
+  line-height: 1.56;
+}
+
+.about-most-page .most-purpose-card-accent {
+  box-shadow: 0 22px 50px rgba(255, 75, 139, 0.18);
+}
+
+.about-most-page .most-about-scale {
+  margin-bottom: 0;
+  padding-top: 104px;
+  padding-bottom: 104px;
+  background-color: var(--most-surface-soft);
+}
+
+.about-most-page .most-scale-wrapper {
+  width: 100%;
+  border-color: var(--most-white);
+  border-radius: var(--most-radius-lg);
+  box-shadow: var(--most-shadow-card);
+}
+
+.about-most-page .most-scale-wrapper h6,
+.about-most-page .most-scale-wrapper h3,
+.about-most-page .most-scale-wrapper p {
+  max-width: 100%;
+}
+
+.about-most-page .most-scale-metrics {
+  align-items: stretch;
+}
+
+.about-most-page .most-scale-metric {
+  min-height: 210px;
+  padding: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--most-radius-md);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.055) 0%, rgba(255, 255, 255, 0.018) 100%);
+}
+
+.about-most-page .most-scale-value {
+  font-family: var(--font-display);
+  font-size: clamp(32px, 3.25vw, 48px);
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.about-most-page .most-scale-metric h5 {
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+.about-most-page .most-presence-block {
+  margin-top: 8px;
+}
+
+.about-most-page .most-presence-visual,
+.about-most-page .most-presence-card {
+  min-height: 420px;
+  max-height: none;
+}
+
+.about-most-page .most-presence-visual .service-content {
+  min-height: 420px;
+}
+
+.about-most-page .most-presence-visual img {
+  filter: saturate(0.75) contrast(1.02);
+}
+
+.about-most-page .most-presence-card {
+  border-radius: var(--most-radius-md);
+}
+
+.about-most-page .most-presence-card .why-wrap {
+  transform: none;
+}
+
+.about-most-page .most-about-principles {
+  background-color: var(--most-surface);
+}
+
+.about-most-page .most-principles-grid {
+  align-items: stretch;
+}
+
+.about-most-page .most-principle-card {
+  position: relative;
+  min-height: 310px;
+  background-color: var(--most-white);
+  border-color: rgba(6, 15, 30, 0.1);
+  box-shadow: 0 14px 36px rgba(6, 15, 30, 0.06);
+  overflow: hidden;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-most-page .most-principle-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 30px;
+  width: 44px;
+  height: 4px;
+  background-color: var(--most-pink-500);
+}
+
+.about-most-page .most-principle-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 75, 139, 0.45);
+  box-shadow: var(--most-shadow-card);
+}
+
+.about-most-page .most-principle-icon {
+  width: 70px;
+  height: 70px;
+  flex: 0 0 auto;
+}
+
+.about-most-page .most-principle-card h4 {
+  line-height: 1.16;
+}
+
+.about-most-page .most-principle-card p {
+  line-height: 1.5;
+}
+
+.about-most-page .most-about-final-cta {
+  overflow: hidden;
+}
+
+.about-most-page .most-about-final-cta .bg-overlay-4 {
+  background: linear-gradient(90deg, rgba(6, 15, 30, 0.94) 0%, rgba(6, 15, 30, 0.82) 54%, rgba(6, 15, 30, 0.64) 100%);
+  opacity: 1;
+}
+
+.about-most-page .most-about-final-cta h2 {
+  max-width: 820px;
+}
+
+.about-most-page .most-about-final-cta p {
+  max-width: 720px;
+}
+
+.about-most-page .most-final-paths {
+  margin-top: 46px;
+}
+
+.about-most-page .most-final-path {
+  display: flex;
+  flex-direction: column;
+  padding: 34px;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: var(--most-radius-md);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.065) 0%, rgba(255, 255, 255, 0.025) 100%);
+  box-shadow: var(--most-shadow-dark);
+}
+
+.about-most-page .most-final-label {
+  color: var(--most-pink-400);
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.about-most-page .most-final-path .btn-cta-primary {
+  margin-top: auto;
+}
+
+.about-most-page .most-radar-newsletter p {
+  max-width: 620px;
+}
+
+.about-most-page .most-radar-newsletter .form.subscribe {
+  overflow: visible;
+}
+
+.about-most-page .most-radar-newsletter .form.subscribe button {
+  max-width: 210px;
+  white-space: nowrap;
+}
+
+.about-most-page .most-radar-newsletter .most-newsletter-helper {
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.about-most-page .most-footer .footer-logo-box img.logo-footer {
+  max-width: 170px;
+}
+
+.about-most-page .most-footer ul li a {
+  line-height: 1.4;
+}
+
+.about-most-page .most-footer .footer-terms {
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 8px;
+}
+
+@media only screen and (max-width: 1199.98px) {
+  .about-most-page .most-about-audiences {
+    padding-top: 80px;
+  }
+
+  .about-most-page .most-audience-card,
+  .about-most-page .most-journey-card,
+  .about-most-page .most-purpose-card,
+  .about-most-page .most-principle-card {
+    min-height: auto;
+  }
+
+  .about-most-page .most-purpose-visual,
+  .about-most-page .most-purpose-visual img {
+    min-height: 460px;
+  }
+
+  .about-most-page .most-presence-visual,
+  .about-most-page .most-presence-card,
+  .about-most-page .most-presence-visual .service-content {
+    min-height: 380px;
+  }
+}
+
+@media only screen and (max-width: 991.98px) {
+  .about-most-page .most-about-intro .most-about-proof {
+    margin-top: 18px;
+  }
+}
+
+@media only screen and (max-width: 767.98px) {
+  .about-most-page .most-about-banner {
+    background-position: center center !important;
+  }
+
+  .about-most-page .section {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .about-most-page main .b-container {
+    max-width: calc(100vw - 40px);
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .about-most-page main .row,
+  .about-most-page .most-about-footer .row {
+    width: 100%;
+    max-width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .about-most-page main .row > [class*="col-"],
+  .about-most-page .most-about-footer .row > [class*="col-"] {
+    flex: 0 0 100%;
+    max-width: 100%;
+    min-width: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .about-most-page .most-about-intro > .b-container > .row {
+    row-gap: 48px !important;
+  }
+
+  .about-most-page .most-about-intro h2,
+  .about-most-page .most-about-audiences h2,
+  .about-most-page .most-about-journey h2,
+  .about-most-page .most-about-purpose h2,
+  .about-most-page .most-about-scale h2,
+  .about-most-page .most-about-principles h2,
+  .about-most-page .most-about-final-cta h2,
+  .about-most-page .most-audience-card h4,
+  .about-most-page .most-journey-card h4,
+  .about-most-page .most-purpose-card h4,
+  .about-most-page .most-principle-card h4,
+  .about-most-page .most-final-path h4 {
+    max-width: 100%;
+    overflow-wrap: normal;
+    word-break: normal;
+  }
+
+  .about-most-page .most-audience-tags {
+    overflow-wrap: break-word;
+  }
+
+  .about-most-page .most-about-highlight,
+  .about-most-page .most-about-proof {
+    padding: 18px;
+  }
+
+  .about-most-page .most-purpose-visual,
+  .about-most-page .most-purpose-visual img {
+    min-height: 420px;
+  }
+
+  .about-most-page .most-purpose-highlight {
+    max-width: calc(100vw - 96px);
+  }
+
+  .about-most-page .most-scale-wrapper {
+    padding: 26px;
+  }
+
+  .about-most-page .most-scale-metric {
+    min-height: auto;
+  }
+
+  .about-most-page .most-presence-visual,
+  .about-most-page .most-presence-card,
+  .about-most-page .most-presence-visual .service-content {
+    min-height: 360px;
+  }
+
+  .about-most-page .most-final-path {
+    padding: 26px;
+  }
+
+  .about-most-page .most-about-audiences {
+    padding-top: 64px;
+  }
+
+  .about-most-page .most-audience-card {
+    min-height: 360px;
+  }
+
+  .about-most-page .most-journey-card {
+    min-height: 330px;
+    padding-bottom: 112px !important;
+  }
+
+  .about-most-page .most-radar-newsletter .form.subscribe button {
+    max-width: none;
+    white-space: normal;
+  }
+}
+
+@media only screen and (max-width: 576.98px) {
+  .about-most-page main .b-container {
+    max-width: calc(100vw - 56px);
+  }
+
+  .about-most-page .most-about-intro h2,
+  .about-most-page .most-about-audiences h2,
+  .about-most-page .most-about-journey h2,
+  .about-most-page .most-about-purpose h2,
+  .about-most-page .most-about-scale h2,
+  .about-most-page .most-about-principles h2,
+  .about-most-page .most-about-final-cta h2 {
+    font-size: 30px;
+    line-height: 1.12;
+    max-width: 360px !important;
+  }
+
+  .about-most-page .most-about-intro p,
+  .about-most-page .most-about-audiences p,
+  .about-most-page .most-about-journey p,
+  .about-most-page .most-about-purpose p,
+  .about-most-page .most-about-scale p,
+  .about-most-page .most-about-principles p,
+  .about-most-page .most-about-final-cta p {
+    max-width: 360px;
+  }
+
+  .about-most-page .most-scale-value {
+    font-size: 34px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .about-most-page .most-about-intro h2,
+  .about-most-page .most-about-audiences h2,
+  .about-most-page .most-about-journey h2,
+  .about-most-page .most-about-purpose h2,
+  .about-most-page .most-about-scale h2,
+  .about-most-page .most-about-principles h2,
+  .about-most-page .most-about-final-cta h2 {
+    font-size: 28px;
+    max-width: 310px !important;
+  }
+
+  .about-most-page .most-about-intro p,
+  .about-most-page .most-about-audiences p,
+  .about-most-page .most-about-journey p,
+  .about-most-page .most-about-purpose p,
+  .about-most-page .most-about-scale p,
+  .about-most-page .most-about-principles p,
+  .about-most-page .most-about-final-cta p {
+    max-width: 310px;
+  }
+
+  .about-most-page .most-audience-card {
+    min-height: auto;
+  }
+
+  .about-most-page .most-journey-card,
+  .about-most-page .most-purpose-card,
+  .about-most-page .most-principle-card {
+    min-height: auto;
+  }
+
+  .about-most-page .most-purpose-highlight {
+    max-width: calc(100vw - 86px);
+  }
+
+  .about-most-page .most-purpose-highlight h4 {
+    font-size: 18px;
+  }
+
+  .about-most-page .most-scale-wrapper {
+    padding: 22px;
+  }
+
+  .about-most-page .most-scale-value {
+    font-size: 30px;
+  }
+
+  .about-most-page .most-final-path {
+    padding: 22px;
+  }
+
+  .about-most-page .most-footer .footer-terms {
+    gap: 10px !important;
+  }
+}

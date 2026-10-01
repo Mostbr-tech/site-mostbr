@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poder de Compra MOST | Simulador de Financiamento Imobiliário</title>
+  <meta name="description" content="Descubra seu poder de compra, estime sua capacidade de financiamento imobiliário e compare diferentes cenários com a Most.">
+  <link rel="icon" href="favicon-most.png" type="image/png" sizes="512x512">
+  <!-- Animation On Scroll (AOS) -->
+  <link rel="stylesheet" href="css/vendor/aos.css">
+  <!-- Bootstrap Icons CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Slick CSS -->
+  <link rel="stylesheet" href="css/vendor/slick.css">
+  <!-- FANCYBOX CSS  -->
+  <link rel="stylesheet" href="css/vendor/fancybox.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/simulator-most.css">
+</head>
+
+<body class="simulator-most-page">
+
+  <!-- Header -->
+  <header class="header border-bottom-color">
+    <div class="b-container">
+      <nav class="navbar navbar-expand-lg py-3 py-lg-1"
+        aria-label="Offcanvas navbar large">
+        <div class="container-fluid">
+          <div class="logo-box">
+            <a class="navbar-brand" href="index.html"><img src="images/logotipo-most.svg" alt="Most"
+                class="header-logo"></a>
+          </div>
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-start bg-heading-color-3" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header" id="offcanvasNavbarLabel">
+              <div class="logo-box">
+                <a class="navbar-brand" href="index.html"><img src="images/logotipo-most.svg" alt="Most"
+                    class="header-logo"></a>
+              </div>
+              <button type="button" class="btn-close bg-accent-color-2" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body d-flex flex-row justify-content-start justify-content-lg-end align-items-start align-items-lg-center gap-5">
+              <ul class="navbar-nav gap-lg-2 gap-xl-4">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="sobre-a-most.html">Sobre a Most</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <div class="d-flex align-items-center">
+                    <a class="nav-link" href="solucoes.html">
+                      Soluções
+                    </a>
+                    <a class="nav-link dropdown-toggle icon-submenu" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      <i class="bi bi-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="financiamento-imobiliario.html">Financiamento</a></li>
+                      <li><a class="dropdown-item" href="home-equity.html">Home Equity</a></li>
+                      <li><a class="dropdown-item" href="consorcio.html">Consórcio</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <div class="d-flex align-items-center">
+                    <a class="nav-link" href="empresas-e-parceiros.html">
+                      Empresas e parceiros
+                    </a>
+                    <a class="nav-link dropdown-toggle icon-submenu" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      <i class="bi bi-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="empresas-e-parceiros.html#most-business-solutions">Parcerias comerciais</a></li>
+                      <li><a class="dropdown-item" href="empresas-e-parceiros.html#most-business-solutions">Soluções empresariais</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="conteudos.html">Conteúdos</a>
+                </li>
+              </ul>
+              <div class="mt-0 d-none d-lg-block">
+                <a href="contato.html" class="btn-cta-primary align-self-start">
+                  <span class="btn-text">Fale com a Most</span>
+                  <i class="bi bi-arrow-right-circle-fill btn-icon-primary"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- #header end -->
+
+  <main>
+    <section class="section most-simulator-intro">
+      <div class="b-container">
+        <div class="d-flex flex-column gap-4 most-simulator-intro-copy">
+          <span class="most-simulator-eyebrow">Poder de Compra MOST</span>
+          <h1 class="mb-0">Descubra quanto imóvel cabe no seu momento.</h1>
+          <p class="mb-0 text-medium">Responda algumas perguntas e veja como seu cenário pode se comportar em diferentes possibilidades de financiamento.</p>
+          <p class="mb-0 most-simulator-intro-note">A simulação apresenta estimativas para planejamento e comparação. As condições finais dependem da análise de cada instituição.</p>
+          <div>
+            <a href="#most-simulator" id="simulator-start" class="btn-cta-primary align-self-start">
+              <span class="btn-text">Começar</span>
+              <i class="bi bi-arrow-right-circle-fill btn-icon-primary"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="most-simulator" class="section most-conversation">
+      <div class="b-container">
+        <form id="most-simulator-form" class="most-simulator-form" novalidate>
+          <div class="most-simulator-stepper" aria-label="Etapas da simulação">
+            <button type="button" data-step-trigger="1" aria-current="step"><span>1</span> Seu cenário</button>
+            <button type="button" data-step-trigger="2" aria-current="false" disabled><span>2</span> Seus dados</button>
+            <button type="button" data-step-trigger="3" aria-current="false" disabled><span>3</span> Resultado</button>
+          </div>
+
+          <div class="most-simulator-shell">
+            <section class="most-simulator-panel" data-step-panel="1" aria-labelledby="simulator-step-1-title">
+              <h2 id="simulator-step-1-title" class="mb-3">Vamos entender seu momento.</h2>
+              <div class="most-simulator-grid">
+                <fieldset class="most-simulator-field most-simulator-field-full">
+                  <legend>O que você quer descobrir?</legend>
+                  <div class="most-simulator-choice-grid">
+                    <label class="most-simulator-choice">
+                      <input type="radio" name="simulator_goal" value="buying_power" checked>
+                      <span>
+                        <strong class="most-simulator-choice-label">Quanto eu posso comprar</strong>
+                        <p>Estime seu poder de compra a partir de renda, entrada e compromissos.</p>
+                      </span>
+                    </label>
+                    <label class="most-simulator-choice">
+                      <input type="radio" name="simulator_goal" value="property_check">
+                      <span>
+                        <strong class="most-simulator-choice-label">Quero testar um imóvel específico</strong>
+                        <p>Compare seu cenário com um valor de imóvel que você já tem em mente.</p>
+                      </span>
+                    </label>
+                  </div>
+                </fieldset>
+
+                <div class="most-simulator-field">
+                  <label for="simulator-income">Qual é sua renda bruta mensal?</label>
+                  <input id="simulator-income" type="text" inputmode="decimal" autocomplete="off" placeholder="R$ 15.000" data-money-field aria-describedby="simulator-income-error">
+                  <span id="simulator-income-error" class="most-simulator-error" role="alert"></span>
+                </div>
+
+                <div class="most-simulator-field">
+                  <label for="simulator-commitments">Quanto da sua renda já está comprometido mensalmente?</label>
+                  <input id="simulator-commitments" type="text" inputmode="decimal" autocomplete="off" value="R$ 0" data-money-field aria-describedby="simulator-commitments-error">
+                  <span class="most-simulator-helper">Considere parcelas de empréstimos, financiamentos e outros compromissos recorrentes relevantes.</span>
+                  <span id="simulator-commitments-error" class="most-simulator-error" role="alert"></span>
+                </div>
+
+                <div class="most-simulator-field most-simulator-field-full">
+                  <label class="most-simulator-toggle">
+                    <input id="simulator-combine-income" type="checkbox">
+                    Vou compor renda com outra pessoa
+                  </label>
+                </div>
+
+                <div class="most-simulator-field" id="simulator-additional-income-wrap" hidden>
+                  <label for="simulator-additional-income">Renda bruta mensal da outra pessoa</label>
+                  <input id="simulator-additional-income" type="text" inputmode="decimal" autocomplete="off" placeholder="R$ 5.000" data-money-field aria-describedby="simulator-additional-income-error">
+                  <span id="simulator-additional-income-error" class="most-simulator-error" role="alert"></span>
+                </div>
+
+                <div class="most-simulator-field">
+                  <label for="simulator-birth-date">Qual sua data de nascimento?</label>
+                  <input id="simulator-birth-date" type="date" aria-describedby="simulator-birth-date-error">
+                  <span class="most-simulator-helper">Não precisamos do seu CPF para esta estimativa.</span>
+                  <span id="simulator-birth-date-error" class="most-simulator-error" role="alert"></span>
+                </div>
+
+                <div class="most-simulator-field">
+                  <label for="simulator-entry">Quanto você tem disponível para entrada?</label>
+                  <input id="simulator-entry" type="text" inputmode="decimal" autocomplete="off" placeholder="R$ 0" data-money-field aria-describedby="simulator-entry-error">
+                  <span id="simulator-entry-error" class="most-simulator-error" role="alert"></span>
+                </div>
+
+                <fieldset class="most-simulator-field">
+                  <legend>Pretende utilizar FGTS na entrada?</legend>
+                  <div class="most-simulator-radio-row">
+                    <label><input id="simulator-fgts-yes" type="radio" name="simulator_fgts" value="yes"> Sim</label>
+                    <label><input id="simulator-fgts-no" type="radio" name="simulator_fgts" value="no" checked> Não</label>
+                  </div>
+                  <span class="most-simulator-helper">O uso efetivo do FGTS depende das regras aplicáveis à operação.</span>
+                </fieldset>
+
+                <div class="most-simulator-field" id="simulator-fgts-value-wrap" hidden>
+                  <label for="simulator-fgts-value">Valor estimado disponível de FGTS</label>
+                  <input id="simulator-fgts-value" type="text" inputmode="decimal" autocomplete="off" placeholder="R$ 0" data-money-field aria-describedby="simulator-fgts-value-error">
+                  <span id="simulator-fgts-value-error" class="most-simulator-error" role="alert"></span>
+                </div>
+
+                <div class="most-simulator-field" id="simulator-property-wrap" hidden>
+                  <label for="simulator-property-value">Qual é o valor do imóvel?</label>
+                  <input id="simulator-property-value" type="text" inputmode="decimal" autocomplete="off" placeholder="R$ 750.000" data-money-field aria-describedby="simulator-property-value-error">
+                  <span id="simulator-property-value-error" class="most-simulator-error" role="alert"></span>
+                </div>
+              </div>
+
+              <div class="most-simulator-actions">
+                <button id="simulator-step-1-next" type="button" class="btn-cta-primary">
+                  <span class="btn-text">Continuar</span>
+                  <i class="bi bi-arrow-right-circle-fill btn-icon-primary"></i>
+                </button>
+              </div>
+            </section>
+
+            <section class="most-simulator-panel" data-step-panel="2" aria-labelledby="simulator-step-2-title" hidden>
+              <h2 id="simulator-step-2-title" class="mb-3">Seu cenário está pronto.</h2>
+              <p class="mb-4">Agora precisamos de alguns dados para abrir sua comparação completa.</p>
+
+              <div class="most-simulator-grid">
+                <div class="most-simulator-field">
+                  <label for="simulator-name">Nome</label>
+                  <input id="simulator-name" type="text" autocomplete="name" aria-describedby="simulator-name-error">
+                  <span id="simulator-name-error" class="most-simulator-error" role="alert"></span>
+                </div>
+
+                <div class="most-simulator-field">
+                  <label for="simulator-email">E-mail</label>
+                  <input id="simulator-email" type="email" autocomplete="email" aria-describedby="simulator-email-error">
+                  <span id="simulator-email-error" class="most-simulator-error" role="alert"></span>
+                </div>
+
+                <div class="most-simulator-field">
+                  <label for="simulator-phone">Telefone / WhatsApp</label>
+                  <input id="simulator-phone" type="tel" autocomplete="tel" aria-describedby="simulator-phone-error">
+                  <span id="simulator-phone-error" class="most-simulator-error" role="alert"></span>
+                </div>
+
+                <div class="most-simulator-field most-simulator-field-full">
+                  <span id="simulator-contact-error" class="most-simulator-error" role="alert"></span>
+                </div>
+
+                <div class="most-simulator-field most-simulator-field-full">
+                  <label class="most-simulator-checkbox">
+                    <input id="simulator-marketing-opt-in" type="checkbox" name="marketing_opt_in" value="1">
+                    Quero receber também conteúdos, análises e novidades da Most.
+                  </label>
+                </div>
+
+                <div class="most-simulator-field most-simulator-field-full">
+                  <p class="most-simulator-privacy mb-0">Ao continuar, seus dados serão utilizados para gerar e apresentar sua simulação e permitir a continuidade do atendimento solicitado. <a href="politica-de-privacidade.html">Política de Privacidade</a></p>
+                </div>
+              </div>
+
+              <!--
+              FUTURO:
+              CPF pode ser solicitado somente em uma etapa posterior de análise real,
+              quando houver finalidade operacional concreta e integração adequada.
+              -->
+
+              <div class="most-simulator-actions">
+                <button id="simulator-step-2-back" type="button" class="btn-cta-secondary">Voltar<i class="bi bi-arrow-right-short"></i></button>
+                <button id="simulator-calculate" type="button" class="btn-cta-primary">
+                  <span class="btn-text">Ver meu poder de compra</span>
+                  <i class="bi bi-arrow-right-circle-fill btn-icon-primary"></i>
+                </button>
+              </div>
+            </section>
+
+            <section class="most-simulator-panel" data-step-panel="3" aria-labelledby="simulator-step-3-title" hidden>
+              <h2 id="simulator-step-3-title" class="mb-3">Seu poder de compra estimado</h2>
+              <p class="mb-4">Valores estimados. Custos acessórios e condições específicas podem alterar as parcelas reais.</p>
+
+              <div class="most-simulator-result-grid" aria-live="polite">
+                <div class="most-simulator-result-card">
+                  <span class="most-simulator-eyebrow">Resultado principal</span>
+                  <div id="result-main-value" class="most-simulator-main-value">Em configuração</div>
+                  <p id="result-main-text" class="mb-0">Com base nas informações fornecidas e nos parâmetros utilizados nesta simulação.</p>
+                </div>
+
+                <aside class="most-simulator-summary">
+                  <h3 class="mb-3">Resumo do cenário</h3>
+                  <dl>
+                    <div>
+                      <dt>Entrada considerada</dt>
+                      <dd id="summary-entry">Em configuração</dd>
+                    </div>
+                    <div>
+                      <dt>Renda considerada</dt>
+                      <dd id="summary-income">Em configuração</dd>
+                    </div>
+                    <div>
+                      <dt>Compromissos mensais</dt>
+                      <dd id="summary-commitments">Em configuração</dd>
+                    </div>
+                    <div>
+                      <dt>Prazo / cenário</dt>
+                      <dd id="summary-term">Conforme parâmetros configurados por instituição</dd>
+                    </div>
+                    <div>
+                      <dt>Tipo de simulação</dt>
+                      <dd id="summary-mode">Poder de compra</dd>
+                    </div>
+                    <div id="summary-property-row" hidden>
+                      <dt>Valor do imóvel desejado</dt>
+                      <dd id="summary-property">Em configuração</dd>
+                    </div>
+                  </dl>
+                </aside>
+              </div>
+
+              <div id="simulator-highlights" class="most-simulator-highlights"></div>
+
+              <section class="most-simulator-comparison" aria-labelledby="bank-comparison-title">
+                <h3 id="bank-comparison-title" class="mb-3">Comparação entre instituições</h3>
+                <div class="most-simulator-table-wrap">
+                  <table class="table table-hover align-middle">
+                    <thead>
+                      <tr>
+                        <th>Banco</th>
+                        <th>Capacidade estimada de financiamento</th>
+                        <th>Poder de compra estimado</th>
+                        <th>Primeira parcela</th>
+                        <th>Última parcela</th>
+                        <th>Renda estimada necessária</th>
+                        <th>Prazo</th>
+                        <th>Taxa utilizada</th>
+                        <th>Sistema</th>
+                        <th>Atualização</th>
+                      </tr>
+                    </thead>
+                    <tbody id="bank-comparison-body"></tbody>
+                  </table>
+                </div>
+                <div id="bank-comparison-cards" class="most-bank-result-list"></div>
+              </section>
+
+              <section class="most-simulator-scenario" aria-labelledby="scenario-explorer-title">
+                <h3 id="scenario-explorer-title" class="mb-3">E se seu cenário mudar?</h3>
+                <div class="most-simulator-scenario-grid">
+                  <div class="most-simulator-field most-simulator-range-group">
+                    <label for="simulator-explorer-income">Renda mensal</label>
+                    <input id="simulator-explorer-income" type="text" inputmode="decimal" data-money-field aria-describedby="simulator-explorer-income-error">
+                    <input id="simulator-explorer-income-range" type="range" min="0" max="50000" step="1000" aria-label="Ajustar renda mensal">
+                    <span id="simulator-explorer-income-error" class="most-simulator-error" role="alert"></span>
+                  </div>
+
+                  <div class="most-simulator-field most-simulator-range-group">
+                    <label for="simulator-explorer-entry">Entrada disponível</label>
+                    <input id="simulator-explorer-entry" type="text" inputmode="decimal" data-money-field aria-describedby="simulator-explorer-entry-error">
+                    <input id="simulator-explorer-entry-range" type="range" min="0" max="50000" step="1000" aria-label="Ajustar entrada disponível">
+                    <span id="simulator-explorer-entry-error" class="most-simulator-error" role="alert"></span>
+                  </div>
+                </div>
+              </section>
+
+              <section id="property-scenario" class="most-simulator-property" aria-labelledby="property-scenario-title" hidden>
+                <h3 id="property-scenario-title" class="mb-3">Imóvel desejado</h3>
+                <div class="most-simulator-property-grid">
+                  <div class="most-simulator-property-item">
+                    <span>Seu cenário atual</span>
+                    <strong id="property-current-power">Em configuração</strong>
+                  </div>
+                  <div class="most-simulator-property-item">
+                    <span>Imóvel desejado</span>
+                    <strong id="property-desired-value">Em configuração</strong>
+                  </div>
+                  <div class="most-simulator-property-item">
+                    <span>Diferença estimada</span>
+                    <strong id="property-difference">Em configuração</strong>
+                  </div>
+                </div>
+              </section>
+
+              <section class="most-simulator-next-step" aria-labelledby="next-step-title">
+                <div>
+                  <span class="most-simulator-eyebrow">Próximo passo</span>
+                  <h3 id="next-step-title" class="mb-2">Quer transformar a estimativa em uma análise do seu cenário?</h3>
+                  <p class="mb-0">A Most pode ajudar a aprofundar as possibilidades, entender as condições disponíveis e organizar os próximos passos da operação.</p>
+                </div>
+                <a href="contato.html" class="btn-cta-primary align-self-start">
+                  <span class="btn-text">Falar com a Most</span>
+                  <i class="bi bi-arrow-right-circle-fill btn-icon-primary"></i>
+                </a>
+              </section>
+
+              <section class="most-simulator-method" aria-labelledby="method-title">
+                <h3 id="method-title" class="mb-3">Como esta estimativa é calculada?</h3>
+                <p>Em linguagem simples, a simulação combina o cenário informado com os parâmetros configurados para cada instituição.</p>
+                <div class="accordion" id="simulatorMethodAccordion">
+                  <div class="accordion-item">
+                    <h4 class="accordion-header" id="methodHeadingOne">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#methodCollapseOne" aria-expanded="false" aria-controls="methodCollapseOne">
+                        Entenda os critérios
+                      </button>
+                    </h4>
+                    <div id="methodCollapseOne" class="accordion-collapse collapse" aria-labelledby="methodHeadingOne" data-bs-parent="#simulatorMethodAccordion">
+                      <div class="accordion-body">
+                        <ol>
+                          <li>Analisamos a renda informada e os compromissos mensais.</li>
+                          <li>Aplicamos os parâmetros configurados para cada instituição.</li>
+                          <li>Estimamos a capacidade financeira da operação.</li>
+                          <li>Consideramos entrada e percentual financiável.</li>
+                          <li>Projetamos parcela, prazo e poder de compra.</li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section class="most-simulator-disclaimer" aria-labelledby="disclaimer-title">
+                <h3 id="disclaimer-title" class="mb-3">Informações importantes</h3>
+                <p>Esta ferramenta apresenta estimativas para fins de planejamento e comparação.</p>
+                <p>Os resultados não constituem:</p>
+                <ul>
+                  <li>proposta;</li>
+                  <li>aprovação;</li>
+                  <li>pré-aprovação;</li>
+                  <li>garantia de crédito;</li>
+                  <li>condição definitiva de contratação.</li>
+                </ul>
+                <p class="mt-3">Condições podem variar conforme instituição, perfil, operação, imóvel, documentação, relacionamento e condições vigentes. Os valores finais dependem da análise realizada pelas instituições envolvidas.</p>
+              </section>
+
+              <div class="most-simulator-actions">
+                <button id="simulator-reset" type="button" class="btn-cta-secondary">Nova simulação<i class="bi bi-arrow-right-short"></i></button>
+              </div>
+            </section>
+
+            <aside class="most-simulator-assist" aria-label="Orientações da simulação">
+              <h3 class="mb-3">Uma ferramenta para decidir com mais clareza.</h3>
+              <p>Você informa seu cenário financeiro, passa por uma etapa curta de contato e recebe uma estimativa preparada para comparação entre instituições quando os parâmetros estiverem validados.</p>
+              <ul class="mb-0">
+                <li>Sem CPF nesta etapa.</li>
+                <li>Sem consulta bancária ou bureau.</li>
+                <li>Sem armazenamento local de dados.</li>
+              </ul>
+            </aside>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="section most-simulator-method" aria-labelledby="method-title">
+      <div class="b-container most-simulator-section-inner">
+        <h2 id="method-title">Como calculamos esta estimativa?</h2>
+        <div class="accordion" id="simulatorMethodAccordion">
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="methodHeadingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#methodCollapseOne" aria-expanded="false" aria-controls="methodCollapseOne">Entenda o caminho do cálculo</button>
+            </h3>
+            <div id="methodCollapseOne" class="accordion-collapse collapse" aria-labelledby="methodHeadingOne" data-bs-parent="#simulatorMethodAccordion">
+              <div class="accordion-body">
+                <ol class="most-method-flow">
+                  <li><strong>Renda</strong><span>Somamos as rendas consideradas.</span></li>
+                  <li><strong>Comprometimento disponível</strong><span>Descontamos compromissos mensais do limite aplicável.</span></li>
+                  <li><strong>Prazo</strong><span>Consideramos prazo e idade conforme cada parâmetro válido.</span></li>
+                  <li><strong>Capacidade estimada</strong><span>Calculamos o principal compatível com a parcela.</span></li>
+                  <li><strong>Entrada</strong><span>Somamos entrada e FGTS informado, sem avaliar elegibilidade.</span></li>
+                  <li><strong>Poder de compra</strong><span>Limitamos o cenário pela capacidade de crédito e pelo percentual financiável.</span></li>
+                </ol>
+                <p class="most-cost-note">A estimativa não inclui silenciosamente seguros, tarifas, TR, impostos, cartório ou outros custos acessórios.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section most-simulator-disclaimer" aria-labelledby="disclaimer-title">
+      <div class="b-container most-simulator-section-inner">
+        <h2 id="disclaimer-title">Informações importantes</h2>
+        <p>Esta ferramenta apresenta estimativas para planejamento e comparação.</p>
+        <p>Os resultados não constituem proposta, aprovação, pré-aprovação, garantia de crédito ou condição definitiva de contratação.</p>
+        <p>As condições podem variar conforme instituição, perfil, operação, imóvel, documentação e condições vigentes.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer overflow-hidden most-footer most-solutions-footer">
+    <div class="b-container d-flex flex-column gap-4">
+      <div class="row d-flex align-items-center gap-4 gap-xl-0 most-radar-newsletter" id="most-radar-newsletter">
+        <div class="col-12 col-xl-6">
+          <h3 class="text-secondary-color text-center text-xl-start mb-3">O Radar MOST no seu email todo trimestre</h3>
+          <p class="text-color-1 text-center text-xl-start mb-0">Taxas reais, dados de aprovação por banco e inteligência do mercado de crédito imobiliário. Para quem toma decisões com dados.</p>
+        </div>
+        <div class="col-12 col-xl-6">
+          <form class="form subscribe needs-validation d-flex flex-column flex-md-row bg-accent-color">
+            <label for="footer-email" class="visually-hidden">Email para receber o Radar MOST</label>
+            <input type="email" name="email" id="footer-email" class="form-control form-control-lg border-0"
+              placeholder="seu@email.com.br">
+            <button type="button"
+              class="btn btn-cta-form w-100 d-inline-flex d-flex align-items-center justify-content-center no-bottom-left-radius mt-3 mt-md-0">
+              Assinar o Radar
+            </button>
+          </form>
+          <p class="most-newsletter-helper text-color-1 text-center text-xl-start mb-0 mt-3">Sem spam. Dados que importam. Cancelável a qualquer momento.</p>
+        </div>
+      </div>
+      <hr class="py-2 text-heading-color-2 opacity-100">
+      <div class="row g-0 g-md-5 mt-0 mx-auto ptpb-120 position-relative z-1">
+        <div
+          class="col-12 col-md-6 col-xl-3 mt-0 ps-0 mb-5 mb-xl-0 d-flex flex-column justify-content-center justify-content-xl-start gap-4">
+          <div class="footer-logo-box d-flex justify-content-center justify-content-md-start">
+            <img src="images/logotipo-most.svg" alt="Most"
+              class="w-100 h-100 object-fit-contain d-block logo-footer">
+          </div>
+          <p class="text-color-1 text-center text-md-start">Inteligência imobiliária para decisões de alto impacto.</p>
+          <div class="d-flex gap-2 justify-content-center justify-content-md-start">
+            <a href="https://www.twitter.com"><i class="bi bi-twitter icon-social"></i></a>
+            <a href="https://www.linkedin.com"><i class="bi bi-linkedin icon-social"></i></a>
+            <a href="https://www.instagram.com"><i class="bi bi-instagram icon-social"></i></a>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-xl-2 mt-0 pe-0 mb-5 mb-xl-0">
+          <h4 class="text-center text-md-start text-secondary-color mb-4">Plataforma</h4>
+          <ul class="p-0 m-0 d-flex flex-column align-items-center align-items-md-start">
+            <li class="d-flex align-items-center list-unstyled mb-2"><a href="#">Most Analytics</a></li>
+            <li class="d-flex align-items-center list-unstyled mb-2"><a href="#">Most Valuation</a></li>
+            <li class="d-flex align-items-center list-unstyled mb-2"><a href="#">Most Data API</a></li>
+            <li class="d-flex align-items-center list-unstyled mb-2"><a href="#">Most Risk</a></li>
+            <li class="d-flex align-items-center list-unstyled mb-2"><a href="#">Integrações</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-xl-2 mt-0 ps-0 ps-xl-4 mb-5 mb-md-0">
+          <h4 class="text-center text-md-start text-secondary-color mb-4">Soluções</h4>
+          <ul class="p-0 m-0 d-flex flex-column align-items-center align-items-md-start">
+            <li class="d-flex align-items-center list-unstyled mb-2"><a href="financiamento-imobiliario.html">Financiamento</a></li>
+            <li class="d-flex align-items-center list-unstyled mb-2"><a href="home-equity.html">Home Equity</a></li>
+            <li class="d-flex align-items-center list-unstyled mb-2"><a href="consorcio.html">Consórcio</a></li>
+            <li class="d-flex align-items-center list-unstyled mb-2"><a href="empresas-e-parceiros.html#most-business-solutions">Empresas</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-xl-2 mt-0 ps-0 ps-xl-4 mb-5 mb-md-0">
+          <h4 class="text-center text-md-start text-secondary-color mb-4">Empresa</h4>
+          <ul class="p-0 m-0 d-flex flex-column align-items-center align-items-md-start">
+            <li class="d-flex align-items-center list-unstyled mb-2"><a href="sobre-a-most.html">Sobre a Most</a></li>
+            <li class="d-flex align-items-center list-unstyled mb-2"><a href="conteudos.html">Blog</a></li>
+            <li class="d-flex align-items-center list-unstyled mb-2"><a href="contato.html">Carreiras</a></li>
+            <li class="d-flex align-items-center list-unstyled mb-2"><a href="#">Imprensa</a></li>
+            <li class="d-flex align-items-center list-unstyled mb-2"><a href="empresas-e-parceiros.html">Parceiros</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-xl-3 mt-0 pe-0 d-flex flex-column align-items-center align-items-md-start" id="most-contact">
+          <h4 class="text-center text-md-start text-secondary-color mb-4">Suporte</h4>
+          <ul class="p-0 m-0 d-flex flex-column align-items-center align-items-md-start">
+            <li class="d-flex align-items-center list-unstyled mb-2"><a href="#">Documentação</a></li>
+            <li class="d-flex align-items-center list-unstyled mb-2"><a href="#">Central de Ajuda</a></li>
+            <li class="d-flex align-items-center list-unstyled mb-2"><a href="#">Status da API</a></li>
+            <li class="d-flex align-items-center list-unstyled mb-2"><a href="contato.html">Contato</a></li>
+            <li class="d-flex align-items-center list-unstyled mb-2"><a href="politica-de-privacidade.html">LGPD</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row position-relative z-0">
+      <div class="border-top-color position-relative z-1">
+        <div class="b-container py-4">
+          <div class="d-flex flex-column flex-md-row flex-wrap justify-content-center justify-content-md-between align-items-center">
+            <p class="text-color-1 mb-2 mb-md-0 footer-rights">© 2026 Most Inteligência Imobiliária. Todos os direitos reservados.</p>
+            <ul class="m-0 p-0 d-flex gap-3 footer-terms">
+              <li class="list-unstyled"><a href="politica-de-privacidade.html" class="text-color-3 pe-3">Privacidade</a></li>
+              <li class="list-unstyled"><a href="termos-de-uso.html" class="text-color-3 pe-3">Termos</a></li>
+              <li class="list-unstyled"><a href="politica-de-cookies.html" class="text-color-3">Cookies</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- #footer -->
+
+  <!-- Scripts -->
+  <script src="js/vendor/jquery.min.js"></script>
+  <script src="js/vendor/aos.js"></script>
+  <script src="js/vendor/slick.min.js"></script>
+  <script src="js/vendor/fancybox.umd.js"></script>
+  <script src="js/vendor/bootstrap.bundle.min.js"></script>
+  <script src="js/script-counter.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/simulator-bank-config.js"></script>
+  <script src="js/simulator-most.js"></script>
+  <!-- End Scripts -->
+</body>
+
+</html>

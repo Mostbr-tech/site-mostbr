@@ -1,0 +1,582 @@
+/* ==========================================================================
+   MOST - Financing page
+   Scope: financiamento-imobiliario.html only.
+   ========================================================================== */
+
+.financing-most-page {
+  overflow-x: hidden;
+}
+
+.financing-most-page .b-container {
+  width: 100%;
+}
+
+.financing-most-page main,
+.financing-most-page footer {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.financing-most-page h1,
+.financing-most-page h2,
+.financing-most-page h3,
+.financing-most-page h4,
+.financing-most-page h5,
+.financing-most-page h6 {
+  letter-spacing: 0;
+}
+
+.financing-most-page .most-financing-banner {
+  background-color: var(--most-navy-950);
+}
+
+.financing-most-page .most-financing-banner .bg-overlay-5 {
+  background: linear-gradient(90deg, rgba(6, 15, 30, 0.96) 0%, rgba(6, 15, 30, 0.8) 58%, rgba(6, 15, 30, 0.58) 100%);
+  opacity: 1;
+}
+
+.financing-most-page .most-financing-banner h1 {
+  max-width: 920px;
+}
+
+.financing-most-page .breadcrumb {
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 4px;
+}
+
+.financing-most-page .most-financing-intro {
+  background-color: var(--most-surface);
+}
+
+.financing-most-page .most-intro-nav {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: var(--most-shadow-card);
+}
+
+.financing-most-page .most-intro-nav h3 {
+  line-height: 1.15;
+}
+
+.financing-most-page .most-intro-nav a {
+  line-height: 1.35;
+  transition: color 0.3s ease;
+}
+
+.financing-most-page .most-intro-nav a:hover {
+  color: var(--most-pink-400) !important;
+}
+
+.financing-most-page .most-intro-side-cta {
+  min-height: 360px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.financing-most-page .most-intro-side-cta .bg-overlay-3 {
+  opacity: 0.96;
+}
+
+.financing-most-page .most-intro-content img {
+  min-height: 495px;
+  object-fit: cover;
+  filter: saturate(0.72) contrast(1.04);
+}
+
+.financing-most-page .most-intro-content > p {
+  max-width: 780px;
+  color: rgba(6, 15, 30, 0.68);
+}
+
+.financing-most-page .most-intro-highlight {
+  max-width: 760px;
+  padding: 22px 24px;
+  background-color: var(--most-white);
+  border-left: 4px solid var(--most-pink-500);
+  border-radius: var(--most-radius-md);
+  box-shadow: 0 14px 36px rgba(6, 15, 30, 0.06);
+}
+
+.financing-most-page .most-regulatory-note,
+.financing-most-page .most-card-note,
+.financing-most-page .most-final-disclaimer,
+.financing-most-page .most-institution-note {
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.financing-most-page .most-regulatory-note {
+  max-width: 760px;
+  color: rgba(6, 15, 30, 0.58) !important;
+}
+
+.financing-most-page .most-action-secondary,
+.financing-most-page .most-final-secondary {
+  min-height: 48px;
+  align-items: center;
+  padding: 0 4px;
+}
+
+.financing-most-page .most-intro-nav li {
+  min-width: 0;
+}
+
+.financing-most-page .most-intro-nav a {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+
+.financing-most-page .most-financing-scenarios {
+  background-color: var(--most-white);
+}
+
+.financing-most-page .most-scenarios-grid {
+  align-items: stretch;
+}
+
+.financing-most-page .most-scenario-card {
+  min-height: 520px;
+  overflow: hidden;
+}
+
+.financing-most-page .most-scenario-card > img {
+  filter: saturate(0.7) contrast(1.04);
+}
+
+.financing-most-page .most-scenario-card .service-wrap {
+  min-height: 196px;
+}
+
+.financing-most-page .most-scenario-card .service-wrap p {
+  margin-bottom: 0;
+}
+
+.financing-most-page .most-financing-journey {
+  background-color: var(--most-surface-soft);
+}
+
+.financing-most-page .most-journey-intro {
+  max-width: 760px;
+  color: rgba(6, 15, 30, 0.68);
+}
+
+.financing-most-page .most-journey-grid {
+  align-items: stretch;
+  counter-reset: most-journey;
+}
+
+.financing-most-page .most-journey-card {
+  min-height: 330px;
+  padding-bottom: 118px !important;
+  background-color: var(--most-navy-950);
+  border: 1px solid rgba(6, 15, 30, 0.08);
+  overflow: hidden;
+}
+
+.financing-most-page .most-journey-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 30px;
+  width: 44px;
+  height: 4px;
+  background-color: var(--most-pink-500);
+  border-radius: 0 0 var(--most-radius-sm) var(--most-radius-sm);
+}
+
+.financing-most-page .most-journey-card::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -16px;
+  width: 32px;
+  height: 2px;
+  background-color: rgba(255, 75, 139, 0.55);
+}
+
+.financing-most-page .most-journey-grid > [class*="col-"]:nth-child(3n) .most-journey-card::after,
+.financing-most-page .most-journey-grid > [class*="col-"]:last-child .most-journey-card::after {
+  display: none;
+}
+
+.financing-most-page .most-journey-card .qoute-inner {
+  background-color: var(--most-surface-soft);
+}
+
+.financing-most-page .most-journey-card .qoute-wrapper {
+  background-color: var(--most-navy-900);
+}
+
+.financing-most-page .most-journey-card p {
+  margin-bottom: 0;
+}
+
+.financing-most-page .most-card-note {
+  max-width: 92%;
+  color: var(--most-pink-400);
+}
+
+.financing-most-page .most-journey-final {
+  background-color: var(--most-pink-500);
+}
+
+.financing-most-page .most-journey-final p {
+  color: rgba(6, 15, 30, 0.75);
+}
+
+.financing-most-page .most-journey-final .btn-cta-secondary {
+  color: var(--most-navy-950);
+}
+
+.financing-most-page .most-journey-final .btn-cta-secondary:hover {
+  color: var(--most-white);
+}
+
+.financing-most-page .most-financing-analysis {
+  background-color: var(--most-surface);
+}
+
+.financing-most-page .most-financing-analysis .row {
+  align-items: stretch;
+}
+
+.financing-most-page .most-analysis-lead p,
+.financing-most-page .most-financing-analysis > .b-container > .row > .col-12 > p {
+  color: rgba(6, 15, 30, 0.68);
+}
+
+.financing-most-page .most-financing-analysis img {
+  min-height: 260px;
+  object-fit: cover;
+  filter: saturate(0.72) contrast(1.04);
+}
+
+.financing-most-page .most-analysis-grid {
+  align-items: stretch;
+}
+
+.financing-most-page .most-analysis-card {
+  min-height: 265px;
+  border: 1px solid rgba(6, 15, 30, 0.08);
+  box-shadow: 0 12px 30px rgba(6, 15, 30, 0.06);
+}
+
+.financing-most-page .most-analysis-card h2 {
+  line-height: 0.95;
+}
+
+.financing-most-page .most-analysis-card-light {
+  box-shadow: var(--most-shadow-card);
+}
+
+.financing-most-page .most-financing-why {
+  padding-top: 108px;
+  padding-bottom: 108px;
+}
+
+.financing-most-page .most-why-grid {
+  align-items: stretch;
+}
+
+.financing-most-page .most-why-card {
+  min-height: 360px;
+  max-height: none;
+  justify-content: flex-end;
+  border-radius: var(--most-radius-md);
+  overflow: hidden;
+}
+
+.financing-most-page .most-why-card .why-wrap {
+  transform: none;
+}
+
+.financing-most-page .most-why-card.project .spacer-top-left {
+  box-shadow: -10px -10px 0 0 var(--most-navy-950);
+}
+
+.financing-most-page .most-why-card h6 {
+  min-width: 52px;
+  text-align: center;
+}
+
+.financing-most-page .most-why-card p {
+  margin-bottom: 0;
+}
+
+.financing-most-page .most-financing-institutions {
+  background-color: var(--most-white);
+}
+
+.financing-most-page .most-institutions-feature,
+.financing-most-page .most-institutions-feature .service-content {
+  min-height: 430px;
+  max-height: none;
+}
+
+.financing-most-page .most-institutions-feature img {
+  filter: saturate(0.65) contrast(1.03);
+}
+
+.financing-most-page .most-institution-note {
+  color: var(--most-pink-400) !important;
+}
+
+.financing-most-page .most-institutions-side {
+  max-height: none !important;
+}
+
+.financing-most-page .most-compare-rationale {
+  min-height: 260px;
+  justify-content: center;
+  box-shadow: var(--most-shadow-card);
+}
+
+.financing-most-page .most-financing-faq {
+  background-color: var(--most-surface-soft);
+}
+
+.financing-most-page .most-financing-faq .img-faqs {
+  min-height: 620px;
+  object-fit: cover;
+  filter: saturate(0.74) contrast(1.02);
+}
+
+.financing-most-page .most-financing-faq .text-faqs .wrapper-text {
+  width: 66%;
+}
+
+.financing-most-page .most-financing-faq .text-faqs h3 {
+  line-height: 1.18;
+}
+
+.financing-most-page .most-financing-faq .accordion .accordion-button {
+  line-height: 1.22;
+}
+
+.financing-most-page .most-financing-faq .accordion .accordion-body {
+  color: rgba(6, 15, 30, 0.68);
+  line-height: 1.62;
+}
+
+.financing-most-page .most-financing-final-cta {
+  overflow: hidden;
+}
+
+.financing-most-page .most-financing-final-cta .bg-overlay-4 {
+  background: linear-gradient(90deg, rgba(6, 15, 30, 0.96) 0%, rgba(6, 15, 30, 0.84) 54%, rgba(6, 15, 30, 0.66) 100%);
+  opacity: 1;
+}
+
+.financing-most-page .most-financing-final-cta h2 {
+  max-width: 820px;
+}
+
+.financing-most-page .most-financing-final-cta p {
+  max-width: 720px;
+}
+
+.financing-most-page .most-final-actions {
+  margin-top: 6px;
+}
+
+.financing-most-page .most-final-disclaimer {
+  color: rgba(238, 241, 247, 0.72) !important;
+}
+
+.financing-most-page .most-radar-newsletter h3 {
+  max-width: 580px;
+}
+
+.financing-most-page .most-radar-newsletter p {
+  max-width: 640px;
+}
+
+.financing-most-page .most-newsletter-helper {
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 1199.98px) {
+  .financing-most-page .most-financing-intro .sidebar-service {
+    width: 100%;
+  }
+
+  .financing-most-page .most-journey-grid > [class*="col-"]:nth-child(3n) .most-journey-card::after {
+    display: block;
+  }
+
+  .financing-most-page .most-journey-grid > [class*="col-"]:nth-child(2n) .most-journey-card::after,
+  .financing-most-page .most-journey-grid > [class*="col-"]:last-child .most-journey-card::after {
+    display: none;
+  }
+
+  .financing-most-page .most-why-card {
+    min-height: 300px;
+  }
+}
+
+@media only screen and (max-width: 991.98px) {
+  .financing-most-page .most-financing-banner h1 {
+    max-width: 720px;
+  }
+
+  .financing-most-page .most-financing-faq .text-faqs .wrapper-text {
+    width: 72%;
+  }
+
+  .financing-most-page .most-institutions-side {
+    gap: 24px;
+  }
+}
+
+@media only screen and (max-width: 768.98px) {
+  .financing-most-page .most-financing-banner h1 {
+    max-width: 350px;
+  }
+
+  .financing-most-page .breadcrumb {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+
+  .financing-most-page .most-intro-content img,
+  .financing-most-page .most-financing-faq .img-faqs {
+    min-height: 420px;
+  }
+
+  .financing-most-page .most-scenario-card {
+    min-height: 440px;
+  }
+
+  .financing-most-page .most-scenario-card .service-wrap {
+    min-height: auto;
+    transform: none;
+  }
+
+  .financing-most-page .most-journey-card {
+    min-height: 300px;
+  }
+
+  .financing-most-page .most-journey-card::after {
+    top: auto;
+    right: auto;
+    bottom: -14px;
+    left: 50%;
+    width: 2px;
+    height: 28px;
+  }
+
+  .financing-most-page .most-journey-grid > [class*="col-"]:nth-child(2n) .most-journey-card::after,
+  .financing-most-page .most-journey-grid > [class*="col-"]:nth-child(3n) .most-journey-card::after {
+    display: block;
+  }
+
+  .financing-most-page .most-journey-grid > [class*="col-"]:last-child .most-journey-card::after {
+    display: none;
+  }
+
+  .financing-most-page .most-analysis-card {
+    min-height: auto;
+  }
+
+  .financing-most-page .most-why-card {
+    min-height: 260px;
+  }
+
+  .financing-most-page .most-institutions-feature,
+  .financing-most-page .most-institutions-feature .service-content {
+    min-height: 470px;
+  }
+
+  .financing-most-page .most-compare-rationale {
+    min-height: auto;
+  }
+
+  .financing-most-page .most-financing-faq .text-faqs .wrapper-text {
+    width: 82%;
+  }
+
+  .financing-most-page .most-financing-faq .accordion .accordion-button {
+    font-size: 18px;
+  }
+
+  .financing-most-page .footer-terms {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 8px;
+  }
+}
+
+@media only screen and (max-width: 575.98px) {
+  .financing-most-page .most-financing-banner {
+    background-position: center center !important;
+  }
+
+  .financing-most-page .most-financing-banner h1 {
+    max-width: 310px;
+  }
+
+  .financing-most-page .most-intro-highlight {
+    padding: 18px;
+  }
+
+  .financing-most-page .most-intro-side-cta {
+    min-height: 300px;
+  }
+
+  .financing-most-page .most-action-secondary,
+  .financing-most-page .most-final-secondary {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .financing-most-page .btn-cta-primary,
+  .financing-most-page .btn-cta-secondary {
+    max-width: 100%;
+  }
+
+  .financing-most-page .most-intro-nav li {
+    align-items: flex-start !important;
+  }
+
+  .financing-most-page .most-intro-nav a {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .financing-most-page .most-intro-nav a .bi {
+    flex: 0 0 auto;
+    margin-top: 1px;
+  }
+
+  .financing-most-page .most-journey-final .btn-cta-secondary {
+    width: 100%;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .financing-most-page .most-intro-nav[data-aos="fade-right"],
+  .financing-most-page .most-journey-grid [data-aos="fade-right"] {
+    transform: translate3d(0, 0, 0);
+  }
+
+  .financing-most-page .most-journey-card {
+    padding: 28px 24px 110px !important;
+  }
+
+  .financing-most-page .most-card-note {
+    max-width: 100%;
+  }
+
+  .financing-most-page .most-financing-faq .text-faqs .wrapper-text {
+    width: 88%;
+  }
+
+  .financing-most-page .most-financing-final-cta {
+    background-position: center center;
+  }
+}
