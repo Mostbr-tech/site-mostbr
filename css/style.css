@@ -2740,8 +2740,15 @@ a:hover {
 }
 
 @media only screen and (max-width: 991.98px) {
+  .header {
+    z-index: 1060;
+  }
+
   .offcanvas {
     background-color: var(--most-navy-950) !important;
+    height: 100vh;
+    height: 100dvh;
+    min-height: 100vh;
   }
 
   .dropdown-menu {
